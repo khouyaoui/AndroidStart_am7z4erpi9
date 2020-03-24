@@ -13,7 +13,7 @@ local.properties
 # Signing files
 .signing/
 # folders
-.idea/
+.idea
 # User-specific configurations
 .idea/libraries/
 .idea/workspace.xml
