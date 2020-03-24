@@ -1,0 +1,3 @@
+rootProject.name='Mis Lugares Java'
+include ':app'
+include ':Mislugares'
