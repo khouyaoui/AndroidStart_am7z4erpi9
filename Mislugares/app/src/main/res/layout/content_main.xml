@@ -8,10 +8,40 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp" >
+
+            <Button
+                android:id="@+id/B1_mostrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accion_mostrar" />
+
+            <Button
+                android:id="@+id/B2_preferencias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accion_preferencias"/>
+
+            <Button
+                android:id="@+id/B3_acerca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accion_acerca_de"
+                />
+            <Button
+                android:id="@+id/B4_salir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accion_salir"  />
+
+
+    </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
