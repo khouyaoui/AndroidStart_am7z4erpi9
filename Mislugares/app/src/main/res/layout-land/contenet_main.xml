@@ -42,7 +42,8 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     style="?android:attr/buttonBarButtonStyle"
-                    android:text="@string/accion_acerca_de"/>
+                    android:text="@string/accion_acerca_de"
+                    />
                 <Button android:id="@+id/button04"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
