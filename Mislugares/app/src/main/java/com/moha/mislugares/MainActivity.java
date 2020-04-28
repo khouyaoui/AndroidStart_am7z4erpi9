@@ -44,7 +44,7 @@ private Button bAcercaDe;
         Button bSalie = findViewById(R.id.B4_salir);
         bSalie.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 finish();
             }
         });
@@ -52,9 +52,8 @@ private Button bAcercaDe;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+         getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;   // menu visible
     }
 
     @Override
@@ -68,6 +67,10 @@ private Button bAcercaDe;
         if (id == R.id.action_settings) {
             return true;
         }
+        if (id == R.id.acercaDe){
+            lanzarAcercaDe(null);
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -75,4 +78,8 @@ private Button bAcercaDe;
         Intent intent = new Intent(this, AcercaDeActivity.class);
         startActivity(intent);
     }
+
+    /*public void bSalir (View view){
+            finish();
+    }*/
 }

@@ -34,12 +34,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:text="@string/accion_acerca_de" />
+             android:text="@string/accion_acerca_de" />
             <Button
                 android:id="@+id/B4_salir"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/accion_salir"  />
+                android:text="@string/accion_salir" />
 
 
     </LinearLayout>
