@@ -17,6 +17,8 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
 private Button bAcercaDe;
+private Button bPreferencias;
+private Button bSalir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,14 +43,22 @@ private Button bAcercaDe;
             }
         });
 
-        Button bSalie = findViewById(R.id.B4_salir);
-        bSalie.setOnClickListener(new View.OnClickListener() {
+        bSalir = findViewById(R.id.B4_salir);
+        bSalir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
         });
-    }
+
+        bPreferencias = findViewById(R.id.B2_preferencias);
+        bPreferencias.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lanzarPreferencias(null);
+            }
+        });
+        }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -65,6 +75,7 @@ private Button bAcercaDe;
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            lanzarPreferencias(null);
             return true;
         }
         if (id == R.id.acercaDe){
@@ -79,6 +90,10 @@ private Button bAcercaDe;
         startActivity(intent);
     }
 
+    public void lanzarPreferencias(View view){
+        Intent intent = new Intent(this, PrefereciasActivity.class);
+        startActivity(intent);
+    }
     /*public void bSalir (View view){
             finish();
     }*/
