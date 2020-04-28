@@ -9,4 +9,5 @@
 <string name="Arrancar" >Mostrar lugares</string>
 <string name="Configurar" >preferencias</string>
     <string name="textoacercaDe">Este programa ha sido desarrollado como ejemplo en el curso de Android para demostrar cómo se pueden lanzar nuevas actividades desde la actividad principal.</string>
+    <string name="acerca_de">About it...</string>
 </resources>
