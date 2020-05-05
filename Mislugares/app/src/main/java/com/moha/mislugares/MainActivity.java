@@ -24,6 +24,7 @@ private Button bSalir;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         bAcercaDe = findViewById(R.id.B3_acerca);
         bAcercaDe.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
