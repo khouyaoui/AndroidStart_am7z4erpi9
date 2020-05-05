@@ -1,4 +1,4 @@
-package com.moha.mislugares;
+package com.moha.mislugares.modelo;
 
 public class Lugar {
     private String nombre;

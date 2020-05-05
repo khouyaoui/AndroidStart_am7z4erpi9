@@ -1,15 +1,18 @@
-package com.moha.mislugares;
+package com.moha.mislugares.presentacion;
 
-import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.moha.mislugares.R;
+import com.moha.mislugares.caso_uso.CasosUsoLugar;
+import com.moha.mislugares.datos.RepositorioLugares;
+import com.moha.mislugares.presentacion.AcercaDeActivity;
+import com.moha.mislugares.presentacion.PrefereciasActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
 private Button bAcercaDe;
 private Button bPreferencias;
 private Button bSalir;
+
+
+private RepositorioLugares lugares;
+private CasosUsoLugar usoLugar;
 
 
 

@@ -1,4 +1,4 @@
-package com.moha.mislugares;
+package com.moha.mislugares.presentacion;
 
 import android.app.Activity;
 import android.os.Bundle;

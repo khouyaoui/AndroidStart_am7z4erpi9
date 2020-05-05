@@ -1,7 +1,9 @@
-package com.moha.mislugares;
+package com.moha.mislugares.presentacion;
 
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
+
+import com.moha.mislugares.R;
 
 public class PreferenciasFragment extends PreferenceFragment {
 

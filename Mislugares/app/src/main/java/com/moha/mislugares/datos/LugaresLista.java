@@ -1,8 +1,11 @@
-package com.moha.mislugares;
+package com.moha.mislugares.datos;
+import com.moha.mislugares.modelo.Lugar;
+import com.moha.mislugares.modelo.TipoLugar;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class LugaresLista implements RepositorioLugares{
+public class LugaresLista implements RepositorioLugares {
     protected List <Lugar> listaLugares;
 
     public LugaresLista() {

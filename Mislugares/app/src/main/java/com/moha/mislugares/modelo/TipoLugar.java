@@ -1,4 +1,4 @@
-package com.moha.mislugares;
+package com.moha.mislugares.modelo;
 
 public enum TipoLugar {
     OTROS ("Otros", 5),
