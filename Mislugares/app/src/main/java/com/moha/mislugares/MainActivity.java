@@ -1,5 +1,6 @@
 package com.moha.mislugares;
 
+import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
 private Button bAcercaDe;
 private Button bPreferencias;
 private Button bSalir;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
