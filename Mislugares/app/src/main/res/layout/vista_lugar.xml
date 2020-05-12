@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".presentacion.VistaLugarActivity"
+    android:id="@+id/vista_lugar"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="Nombres del lugar"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/logo_tipo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="logo del tipo"
+            android:src="@drawable/otros" />
+        <TextView
+            android:id="@+id/tipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="tipo del lugar" />
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:id="@+id/direccion_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="logo del direccion"
+                android:src="@android:drawable/ic_menu_myplaces" />
+            <TextView
+                android:id="@+id/direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="dirección" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:id="@+id/telefono_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="logo del telefono"
+                android:src="@android:drawable/ic_menu_call" />
+            <TextView
+                android:id="@+id/telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="telefono" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:id="@+id/uml_img_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="logo del url"
+                android:src="@android:drawable/ic_menu_mapmode" />
+            <TextView
+                android:id="@+id/url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="url" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:id="@+id/comentario_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="logo del url"
+                android:src="@android:drawable/ic_menu_info_details" />
+            <TextView
+                android:id="@+id/comentario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="comentario" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:id="@+id/fecha_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="logo de fecha"
+                android:src="@android:drawable/ic_menu_my_calendar" />
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="fecha" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:id="@+id/hora_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="logo de hora"
+                android:src="@android:drawable/ic_menu_recent_history" />
+            <TextView
+                android:id="@+id/hora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="hora" />
+        </LinearLayout>
+
+        <RatingBar
+        android:id="@+id/valoracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:rating="3"
+        tools:ignore="MissingConstraints" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="fotografía"
+        android:src="@drawable/foto_epsg"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        tools:ignore="MissingConstraints">
+    <ImageView
+        android:id="@+id/camara"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="logo cámara"
+        android:src="@android:drawable/ic_menu_camera"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/galeria"
+        android:layout_height="20dp"
+        android:layout_width="20dp" />
+
+    </LinearLayout>
+
+    </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

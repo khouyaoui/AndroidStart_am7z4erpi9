@@ -17,9 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".presentacion.AcercaDeActivity"
-            android:label="Acerca de..."/>
+        <activity android:name=".presentacion.AcercaDeActivity"/>
         <activity android:name=".presentacion.PrefereciasActivity"></activity>
         <activity android:name=".presentacion.Aplicacion"></activity>
+        <activity android:name=".presentacion.VistaLugarActivity"></activity>
     </application>
 </manifest>

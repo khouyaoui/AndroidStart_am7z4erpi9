@@ -3,7 +3,7 @@ package com.moha.mislugares.datos;
 
 import com.moha.mislugares.modelo.Lugar;
 
-public interface RepositorioLugares {
+public interface RepositoriosLugares {
         Lugar elemento(int id); //Devuelve el elemento dado su id
         void anyade(Lugar lugar); //Añade el elemento indicado
         int nuevo(); //Añade un elemento en blanco y devuelve su id

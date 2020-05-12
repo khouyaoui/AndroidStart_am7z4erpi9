@@ -5,7 +5,7 @@ import com.moha.mislugares.modelo.TipoLugar;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LugaresLista implements RepositorioLugares {
+public class LugaresLista implements RepositoriosLugares {
     protected List <Lugar> listaLugares;
 
     public LugaresLista() {

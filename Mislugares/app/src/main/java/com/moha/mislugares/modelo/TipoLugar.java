@@ -1,9 +1,11 @@
 package com.moha.mislugares.modelo;
 
+import com.moha.mislugares.R;
+
 public enum TipoLugar {
-    OTROS ("Otros", 5),
-    RESTAURANTE ("Restaurante", 2),
-    BAR ("Bar", 6),
+    OTROS ("Otros", R.drawable.otros),
+    RESTAURANTE ("Restaurante", R.drawable.restaurante),
+    BAR ("Bar", R.drawable.bar),
     COPAS ("Copas", 0),
     ESPECTACULO ("Espectáculo", 0),
     HOTEL ("Hotel", 0),
@@ -23,4 +25,6 @@ public enum TipoLugar {
 
     public String getTexto() { return texto; }
     public int getRecurso() { return recurso; }
+
+
 }

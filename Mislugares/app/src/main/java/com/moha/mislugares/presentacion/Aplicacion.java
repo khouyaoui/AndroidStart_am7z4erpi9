@@ -3,16 +3,16 @@ package com.moha.mislugares.presentacion;
 import android.app.Application;
 
 import com.moha.mislugares.datos.LugaresLista;
-import com.moha.mislugares.datos.RepositorioLugares;
+import com.moha.mislugares.datos.RepositoriosLugares;
 
 public class Aplicacion extends Application {
 
-    public RepositorioLugares lugares = new LugaresLista();
+    public RepositoriosLugares lugares = new LugaresLista();
     @Override public void onCreate() {
         super.onCreate();
     }
 
-    public RepositorioLugares getLugares() {
+    public RepositoriosLugares getLugares() {
         return lugares;
     }
 }
